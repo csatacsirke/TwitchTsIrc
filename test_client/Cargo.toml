@@ -1,0 +1,15 @@
+[package]
+name = "test_client"
+version = "0.1.0"
+authors = ["Csatacsirke <battlechicken74@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+tokio = { version = "1.2.0", features = ["rt", "rt-multi-thread", "macros", "net", "time"] }
+twitch_ts = { path = "../twitch_ts" }
+
+
+
+
+
+

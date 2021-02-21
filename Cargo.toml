@@ -1,0 +1,3 @@
+[workspace]
+
+members = ["twitch_ts", "test_client"]
