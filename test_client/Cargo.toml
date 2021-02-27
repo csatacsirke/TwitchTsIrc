@@ -6,6 +6,7 @@ edition = "2018"
 
 [dependencies]
 tokio = { version = "1.2.0", features = ["rt", "rt-multi-thread", "macros", "net", "time"] }
+async-std = "1.9.0"
 twitch_ts = { path = "../twitch_ts" }
 
 
