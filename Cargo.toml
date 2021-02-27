@@ -1,3 +1,23 @@
-[workspace]
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
-members = ["twitch_ts", "test_client"]
+[package]
+name = "twitch_ts"
+version = "0.1.0"
+authors = ["Csatacsirke <battlechicken74@gmail.com>"]
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+
+
+[dependencies]
+irc = "0.15"
+futures = "0.3"
+failure = "0.1.8"
+async-std = "1.9.0"
+
+[build-dependencies]
+cbindgen = "0.18.0"
+
+[dev-dependencies]
+tokio = { version = "1.2.0", features = ["rt", "rt-multi-thread", "macros", "net", "time"] }

@@ -1,6 +1,5 @@
-extern crate twitch_ts;
+extern crate tokio;
 
-use tokio;
 
 fn on_message(message: &str) {
     println!("> {}", message.to_string());

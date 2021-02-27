@@ -8,7 +8,6 @@ use irc::client::{prelude::*};
 // https://twitchapps.com/tmi/
 
 
-
 async fn process_input(_input: &str, _client: Arc<Mutex<Client>>) -> Result<(), failure::Error> {
     Ok(())
 }
